@@ -14,8 +14,7 @@
 
 body {
   background-color: var(--Blue_100);
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: "Barlow", sans-serif;
+
   padding: 2rem;
   min-height: 100vh;
 }
@@ -24,4 +23,7 @@ header {
   font-family: "Barlow Condensed", sans-serif;
   /* font-weight: 400;*/
   font-weight: 700;
+}
+.main {
+  font-family: "Barlow", sans-serif;
 }

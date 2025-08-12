@@ -20,6 +20,7 @@ export default function Header() {
         <div>
           {show ? (
             <Image
+              className="cursor-pointer"
               onClick={handleClick}
               src={close}
               alt="close icon"
@@ -28,6 +29,7 @@ export default function Header() {
             />
           ) : (
             <Image
+              className="cursor-pointer"
               onClick={handleClick}
               src={hamburger}
               alt="menu hamburger"
@@ -38,11 +40,14 @@ export default function Header() {
         </div>
 
         {show && (
-          <ul className="">
+          <ul className="text-[0.9rem] text-[#26263f] bg-white h-35 w-8/12 text-center flex flex-col items-center justify-center gap-1.5 rounded-sm absolute bottom-125 left-10 shadow-md shadow-[#d1d1e3] ">
             <li> Product</li>
             <li>Features</li>
             <li>Pricing</li>
-            <li>Login</li>
+            <hr className="bg-[#9090a7] w-10/12" />
+            <button className="text-[#9090a7] uppercase cursor-pointer">
+              Login
+            </button>
           </ul>
         )}
       </nav>
